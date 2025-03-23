@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Modern E-commerce Platform</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+        <script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#FF6B6B',
+secondary: '#FFA07A'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+        <style>:where([class^="ri-"])::before { content: "\f3c2"; } .hero-bg { background: linear-gradient(to right, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.1)); }</style>
+        <script>/* Pinegrow Interactions, do not remove */ (function(){try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { window.pgia_small_mq=typeof pgia_small_mq=='string'?pgia_small_mq:'(max-width:767px)';window.pgia_large_mq=typeof pgia_large_mq=='string'?pgia_large_mq:'(min-width:768px)';var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id') && document.documentElement.hasAttribute('data-pg-mobile')) {pgia_small_mq='(min-width:0)';pgia_large_mq='(min-width:99999px)'} pgcss+='@media ' + pgia_small_mq + '{ html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}}';pgcss+='@media ' + pgia_large_mq + '{html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}}';style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}})()</script>
+    </head>
+    <body class="bg-white min-h-screen">
+        <header class="fixed w-full bg-white/95 backdrop-blur z-50 shadow-sm">
+            <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+                <div class="flex items-center gap-12"><a href="#" class="text-2xl font-['Pacifico'] text-primary">logo</a>
+                    <div class="hidden md:flex items-center gap-8"><a href="#" class="text-gray-700 hover:text-primary">Home</a><a href="#" class="text-gray-700 hover:text-primary">Products</a><a href="#" class="text-gray-700 hover:text-primary">Features</a><a href="#" class="text-gray-700 hover:text-primary">About</a>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4">
+                    <button class="flex items-center gap-2 text-gray-700 hover:text-primary"><i class="ri-shopping-cart-line text-xl"></i><span class="hidden md:inline">Cart (0)</span>
+                    </button>
+                    <button class="hidden md:block bg-primary text-white px-6 py-2 !rounded-button hover:bg-primary/90">
+                        Shop Now
+</button>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="relative pt-24 overflow-hidden">
+                <div class="hero-bg absolute inset-0 z-0">
+                    <img src="https://public.readdy.ai/ai/img_res/8684ccc80bdcfb4a2c8655a9d6d166b8.jpg" class="w-full h-full object-cover object-center" alt="Hero Background">
+                </div>
+                <div class="container mx-auto px-6 py-24 relative z-10">
+                    <div class="max-w-2xl">
+                        <h1 class="text-5xl font-bold text-gray-900 mb-6">
+Experience the Best of Indian Shopping</h1>
+                        <p class="text-xl text-gray-600 mb-8">
+Discover authentic Indian products and modern lifestyle essentials.
+Shop from trusted sellers and enjoy the convenience of doorstep delivery.</p>
+                        <div class="flex gap-4 items-center">
+                            <button class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-primary/90">
+                                Start Shopping
+</button>
+                            <button class="text-primary hover:text-primary/90 flex items-center gap-2"><i class="ri-play-circle-line text-2xl"></i>
+                                Watch Demo
+                            </button>
+                        </div>
+                        <div class="flex items-center gap-6 mt-12"><i class="ri-secure-payment-fill text-2xl text-primary"></i><span class="text-gray-600">100% Secure Payments</span><i class="ri-truck-fill text-2xl text-primary"></i><span class="text-gray-600">Pan India Delivery</span><i class="ri-shield-check-fill text-2xl text-primary"></i><span class="text-gray-600">Quality Assured</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-24 bg-gray-50">
+                <div class="container mx-auto px-6">
+                    <div class="text-center mb-16">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-4">
+Why Choose Our Platform</h2>
+                        <p class="text-gray-600 max-w-2xl mx-auto">
+We've simplified online shopping by integrating with the world's leading marketplaces.</p>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="bg-white p-8 rounded-lg shadow-sm">
+                            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6"><i class="ri-shield-check-line text-2xl text-primary"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-4">Secure Shopping</h3>
+                            <p class="text-gray-600">
+Shop with confidence knowing your transactions are protected by industry-leading security measures.</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-lg shadow-sm">
+                            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6"><i class="ri-truck-line text-2xl text-primary"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-4">Fast Delivery</h3>
+                            <p class="text-gray-600">
+Get your items delivered quickly with our optimized logistics network and trusted partners.</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-lg shadow-sm">
+                            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6"><i class="ri-customer-service-2-line text-2xl text-primary"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-4">24/7 Support</h3>
+                            <p class="text-gray-600">
+Our dedicated support team is always ready to help you with any questions or concerns.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-24">
+                <div class="container mx-auto px-6">
+                    <div class="text-center mb-16">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-4">
+Best Selling Products</h2>
+                        <p class="text-gray-600 max-w-2xl mx-auto">
+Explore our most popular items loved by customers worldwide.</p>
+                    </div>
+                    <div class="grid md:grid-cols-4 gap-8">
+                        <div class="bg-white rounded-lg overflow-hidden shadow-sm group">
+                            <div class="aspect-square relative overflow-hidden"><a href="index.html"><img src="https://public.readdy.ai/ai/img_res/833a76039b6f6732fc993c38417f981c.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" alt="Fabric Defuzzer"></a>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">USB Rechargeable Fabric Defuzzer</h3>
+                                <p class="text-gray-600 mb-4">Professional garment care tool</p>
+                                <div class="flex items-center justify-between"><span class="text-primary font-semibold">₹1,999</span>
+                                    <button class="text-primary hover:text-primary/90"><i class="ri-shopping-cart-line text-xl"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg overflow-hidden shadow-sm group">
+                            <div class="aspect-square relative overflow-hidden"><a href="tiffin.html"><img src="https://public.readdy.ai/ai/img_res/e48615b4f578afe855398094a85afdc3.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" alt="Lunch Box"></a>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">Eye Design Lunch Box</h3>
+                                <p class="text-gray-600 mb-4">Multi-compartment stainless steel</p>
+                                <div class="flex items-center justify-between"><span class="text-primary font-semibold">₹2,499</span>
+                                    <button class="text-primary hover:text-primary/90"><i class="ri-shopping-cart-line text-xl"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg overflow-hidden shadow-sm group">
+                            <div class="aspect-square relative overflow-hidden">
+                                <img src="https://public.readdy.ai/ai/img_res/ecd1a0a8840b73f43c2f46dcc782be66.jpg" class="duration-300 group-hover:scale-105 h-full object-cover transition-transform w-full" alt="Storage Basket">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">2-Tier Storage Basket</h3>
+                                <p class="text-gray-600 mb-4">Elegant home organization solution</p>
+                                <div class="flex items-center justify-between"><span class="text-primary font-semibold">₹2,999</span>
+                                    <button class="text-primary hover:text-primary/90"><i class="ri-shopping-cart-line text-xl"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg overflow-hidden shadow-sm group">
+                            <div class="aspect-square relative overflow-hidden">
+                                <img src="https://public.readdy.ai/ai/img_res/8819f017081cf39795a286e55c67182c.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" alt="Pear Lamp">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">Silicone Pear Lamp</h3>
+                                <p class="text-gray-600 mb-4">Unique decorative lighting</p>
+                                <div class="flex items-center justify-between"><span class="text-primary font-semibold">₹1,599</span>
+                                    <button class="text-primary hover:text-primary/90"><i class="ri-shopping-cart-line text-xl"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg overflow-hidden shadow-sm group">
+                            <div class="aspect-square relative overflow-hidden">
+                                <img src="https://public.readdy.ai/ai/img_res/714faf42c8788ece13f2186def23609f.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" alt="Trading Mouse Desktop Mat">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">Trading Mouse Desktop Mat</h3>
+                                <p class="text-gray-600 mb-4">Premium gaming surface</p>
+                                <div class="flex items-center justify-between"><span class="text-primary font-semibold">₹1,299</span>
+                                    <button class="text-primary hover:text-primary/90"><i class="ri-shopping-cart-line text-xl"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg overflow-hidden shadow-sm group">
+                            <div class="aspect-square relative overflow-hidden">
+                                <img src="https://public.readdy.ai/ai/img_res/bffe6080f1088ceaa0c9e34619a3f069.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" alt="Portable Premium Lunch Bag">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">Portable Premium Lunch Bag</h3>
+                                <p class="text-gray-600 mb-4">Insulated food storage</p>
+                                <div class="flex items-center justify-between"><span class="text-primary font-semibold">₹1,899</span>
+                                    <button class="text-primary hover:text-primary/90"><i class="ri-shopping-cart-line text-xl"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg overflow-hidden shadow-sm group">
+                            <div class="aspect-square relative overflow-hidden">
+                                <img src="https://public.readdy.ai/ai/img_res/54d249b43dd1fd9c6bd19b80aef87c22.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" alt="Manual Juice Squeezer">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">Manual Juice Squeezer</h3>
+                                <p class="text-gray-600 mb-4">Efficient citrus press</p>
+                                <div class="flex items-center justify-between"><span class="text-primary font-semibold">₹999</span>
+                                    <button class="text-primary hover:text-primary/90"><i class="ri-shopping-cart-line text-xl"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg overflow-hidden shadow-sm group">
+                            <div class="aspect-square relative overflow-hidden">
+                                <img src="https://public.readdy.ai/ai/img_res/842b8a8faa55a21355aa6b444892ad99.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" alt="Microfiber Scrub Sponges">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">Microfiber Zero Scratch Sponges</h3>
+                                <p class="text-gray-600 mb-4">Gentle cleaning solution</p>
+                                <div class="flex items-center justify-between"><span class="text-primary font-semibold">₹799</span>
+                                    <button class="text-primary hover:text-primary/90"><i class="ri-shopping-cart-line text-xl"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg overflow-hidden shadow-sm group">
+                            <div class="aspect-square relative overflow-hidden">
+                                <img src="https://public.readdy.ai/ai/img_res/1bbe556dcc81e5619cab001fd340b026.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" alt="Neck Mask">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">Reusable Anti-Aging Neck Mask</h3>
+                                <p class="text-gray-600 mb-4">Silicone gel treatment</p>
+                                <div class="flex items-center justify-between"><span class="text-primary font-semibold">₹1,399</span>
+                                    <button class="text-primary hover:text-primary/90"><i class="ri-shopping-cart-line text-xl"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg overflow-hidden shadow-sm group">
+                            <div class="aspect-square relative overflow-hidden">
+                                <img src="https://public.readdy.ai/ai/img_res/a98e60e79d6dcedd2ee789a0278ada38.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" alt="Storage Bag">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">Waterproof Storage Bag</h3>
+                                <p class="text-gray-600 mb-4">Durable protection</p>
+                                <div class="flex items-center justify-between"><span class="text-primary font-semibold">₹1,499</span>
+                                    <button class="text-primary hover:text-primary/90"><i class="ri-shopping-cart-line text-xl"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg overflow-hidden shadow-sm group">
+                            <div class="aspect-square relative overflow-hidden">
+                                <img src="https://public.readdy.ai/ai/img_res/fad8452eda043251dc14a62d122c4e78.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" alt="Lego Watch">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">Lego Buildable Watch</h3>
+                                <p class="text-gray-600 mb-4">Creative timepiece</p>
+                                <div class="flex items-center justify-between"><span class="text-primary font-semibold">₹2,499</span>
+                                    <button class="text-primary hover:text-primary/90"><i class="ri-shopping-cart-line text-xl"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg overflow-hidden shadow-sm group">
+                            <div class="aspect-square relative overflow-hidden">
+                                <img src="https://public.readdy.ai/ai/img_res/c0265be6611edddd91b7d726918d3a34.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" alt="Digital Clock">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">Milk Box Digital Clock</h3>
+                                <p class="text-gray-600 mb-4">Cute alarm timekeeper</p>
+                                <div class="flex items-center justify-between"><span class="text-primary font-semibold">₹1,799</span>
+                                    <button class="text-primary hover:text-primary/90"><i class="ri-shopping-cart-line text-xl"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg overflow-hidden shadow-sm group">
+                            <div class="aspect-square relative overflow-hidden">
+                                <img src="https://public.readdy.ai/ai/img_res/7cb63399c07deee96d5bd6a7af359c29.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" alt="Tulip Lamp">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">DIY Tulip Table Lamp</h3>
+                                <p class="text-gray-600 mb-4">Customizable lighting</p>
+                                <div class="flex items-center justify-between"><span class="text-primary font-semibold">₹2,199</span>
+                                    <button class="text-primary hover:text-primary/90"><i class="ri-shopping-cart-line text-xl"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg overflow-hidden shadow-sm group">
+                            <div class="aspect-square relative overflow-hidden">
+                                <img src="https://public.readdy.ai/ai/img_res/f5103cae3aa0a571e74e16e8bacf9429.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" alt="Fridge Tray">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">360° Rotating Fridge Tray</h3>
+                                <p class="text-gray-600 mb-4">Smart storage solution</p>
+                                <div class="flex items-center justify-between"><span class="text-primary font-semibold">₹1,599</span>
+                                    <button class="text-primary hover:text-primary/90"><i class="ri-shopping-cart-line text-xl"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg overflow-hidden shadow-sm group">
+                            <div class="aspect-square relative overflow-hidden">
+                                <img src="https://public.readdy.ai/ai/img_res/e9bee36b5f0a7c8205c37d67030a74a5.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" alt="Bandage Tape">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">Self Adhesive Bandage Tape</h3>
+                                <p class="text-gray-600 mb-4">Flexible finger wrap</p>
+                                <div class="flex items-center justify-between"><span class="text-primary font-semibold">₹699</span>
+                                    <button class="text-primary hover:text-primary/90"><i class="ri-shopping-cart-line text-xl"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg overflow-hidden shadow-sm group">
+                            <div class="aspect-square relative overflow-hidden">
+                                <img src="https://public.readdy.ai/ai/img_res/b4b22fb5a21db9f22e128f89c601bc08.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" alt="Gamepad Bottle">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">600ML Gamepad Bottle</h3>
+                                <p class="text-gray-600 mb-4">Gaming-inspired hydration</p>
+                                <div class="flex items-center justify-between"><span class="text-primary font-semibold">₹1,499</span>
+                                    <button class="text-primary hover:text-primary/90"><i class="ri-shopping-cart-line text-xl"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg overflow-hidden shadow-sm group">
+                            <div class="aspect-square relative overflow-hidden">
+                                <img src="https://public.readdy.ai/ai/img_res/3b1346dbf1559f3ac245da4e88641e64.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" alt="Coffee Beater">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">Electric Egg Coffee Beater</h3>
+                                <p class="text-gray-600 mb-4">Rechargeable whisk</p>
+                                <div class="flex items-center justify-between"><span class="text-primary font-semibold">₹1,999</span>
+                                    <button class="text-primary hover:text-primary/90"><i class="ri-shopping-cart-line text-xl"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg overflow-hidden shadow-sm group">
+                            <div class="aspect-square relative overflow-hidden">
+                                <img src="https://public.readdy.ai/ai/img_res/93d345aee777232827036a57ab906359.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" alt="Humidifier">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">Triple Spray Humidifier</h3>
+                                <p class="text-gray-600 mb-4">With night light</p>
+                                <div class="flex items-center justify-between"><span class="text-primary font-semibold">₹2,799</span>
+                                    <button class="text-primary hover:text-primary/90"><i class="ri-shopping-cart-line text-xl"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg overflow-hidden shadow-sm group">
+                            <div class="aspect-square relative overflow-hidden">
+                                <img src="https://public.readdy.ai/ai/img_res/a57cabcdbe7d674e987c1ec57f1acfd5.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" alt="Oil Paper">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">Oil Absorbing Paper Roll</h3>
+                                <p class="text-gray-600 mb-4">Skin care essential</p>
+                                <div class="flex items-center justify-between"><span class="text-primary font-semibold">₹599</span>
+                                    <button class="text-primary hover:text-primary/90"><i class="ri-shopping-cart-line text-xl"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg overflow-hidden shadow-sm group">
+                            <div class="aspect-square relative overflow-hidden">
+                                <img src="https://public.readdy.ai/ai/img_res/9cfd27ce7fbda362563c896475afac63.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" alt="Cosmetic Bag">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">Luxury Cosmetic Bag</h3>
+                                <p class="text-gray-600 mb-4">Elegant makeup storage</p>
+                                <div class="flex items-center justify-between"><span class="text-primary font-semibold">₹2,299</span>
+                                    <button class="text-primary hover:text-primary/90"><i class="ri-shopping-cart-line text-xl"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-24 bg-gray-50">
+                <div class="container mx-auto px-6">
+                    <div class="max-w-4xl mx-auto text-center">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-8">
+Ready to Start Shopping?</h2>
+                        <p class="text-gray-600 mb-8">
+Join thousands of satisfied customers who trust our platform for their shopping needs.</p>
+                        <button class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-primary/90">
+                            Get Started Now
+</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-gray-900 text-white py-16">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-4 gap-12">
+                    <div><a href="#" class="text-2xl font-['Pacifico'] text-white mb-6 block">logo</a>
+                        <p class="text-gray-400">
+Your trusted partner for online shopping, connecting you with the world's best marketplaces.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                        <ul class="space-y-4">
+                            <li>
+                                <a href="#" class="text-gray-400 hover:text-white">Home</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-400 hover:text-white">Products</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-400 hover:text-white">Features</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-400 hover:text-white">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-6">Support</h4>
+                        <ul class="space-y-4">
+                            <li>
+                                <a href="#" class="text-gray-400 hover:text-white">Help Center</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-400 hover:text-white">Terms of Service</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-400 hover:text-white">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-6">Connect With Us</h4>
+                        <div class="flex gap-4"><a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20"><i class="ri-facebook-fill"></i></a><a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20"><i class="ri-twitter-fill"></i></a><a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20"><i class="ri-instagram-fill"></i></a><a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20"><i class="ri-linkedin-fill"></i></a>
+                        </div>
+                        <div class="mt-6">
+                            <h4 class="text-lg font-semibold mb-4">Payment Methods</h4>
+                            <div class="flex gap-4"><i class="ri-visa-line text-2xl"></i><i class="ri-mastercard-line text-2xl"></i><i class="ri-paypal-line text-2xl"></i><i class="ri-alipay-line text-2xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                    <p>&copy; 2025 All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <script src="pgia/lib/pgia.js"></script>
+    </body>
+</html>
